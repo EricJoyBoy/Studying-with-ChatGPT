@@ -1,4 +1,4 @@
-package it.esercizi.thread;
+package it.esercizi.thread.mythread;
 
 public class MyThread extends Thread{
 

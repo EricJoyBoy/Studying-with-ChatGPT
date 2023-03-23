@@ -1,0 +1,7 @@
+
+
+Questo è un frammento di codice Java che definisce una classe chiamata `Concurrent` che estende la classe `Thread`. La classe ha una variabile di istanza privata `myNum` di tipo `int`. Il costruttore prende un argomento `int` e assegna il suo valore alla variabile di istanza `myNum`.
+
+Il metodo `run` sovrascrive il metodo `run` della classe `Thread`. Mette prima il thread in pausa per un tempo casuale compreso tra 0 e 100 millisecondi. Quindi stampa un messaggio che include il valore della variabile di istanza `myNum`. Quindi mette nuovamente in pausa il thread per un altro tempo casuale compreso tra 0 e 100 millisecondi prima di stampare un altro messaggio che include il valore della variabile di istanza `myNum`. Se durante una di queste operazioni di sleep viene lanciata un'`InterruptedException`, viene catturata e viene stampato il suo stack trace.
+
+Il metodo `main` crea due istanze della classe `Concurrent` con valori diversi per la loro variabile di istanza `myNum`. Quindi avvia entrambi i thread chiamando i rispettivi metodi start. Il thread principale quindi dorme per un tempo casuale compreso tra 0 e 100 millisecondi prima di stampare un messaggio. Quindi dorme nuovamente per un altro tempo casuale compreso tra 0 e 100 millisecondi prima di stampare un altro messaggio. Se durante una di queste operazioni di sleep viene lanciata un'InterruptedException, viene catturata e viene stampato il suo stack trace.
